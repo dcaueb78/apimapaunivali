@@ -1,0 +1,47 @@
+<div class="container ">
+    <h1 class="display-4 text-center">{{titulo}}</h1>
+    <hr>
+
+    <h1 class="lead text-center">Cadastro de Ponto</h1>
+    <br>
+    <br>
+    <form action="/criarponto" method="POST">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="nome">Nome</label>
+                <input class="form-control" id="nome" name="nome" placeholder="Nome" required type="text">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="tipo">Tipo</label>
+                <select class="form-control" id="tipo" name="tipo" required>
+                    <option selected>Escolha...</option>
+                    <option>Lanchonete</option>
+                    <option>Sala de Aula</option>
+                    <option>Local Público</option>
+                    <option>Banheiro</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="latitude">Latitude</label>
+                <input class="form-control" id="latitude" max="999999999.99999" min="-99999999" name="latitude" placeholder="Latitude" required type="text">
+            </div>
+            <div class=" form-group col-md-6">
+                <label for="longitude">Longitude</label>
+                <input class="form-control" id="Longitude" max="999999999.99999" min="-99999999" name="longitude" placeholder="Longitude" required type="text">
+            </div>
+        </div>
+
+        <button class="btn btn-success" type="submit">Cadastre</button>
+        <a href="/linhadotempo">
+            <button class="btn btn-primary">Voltar</button>
+        </a>
+    </form>
+
+</div>
+<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+<script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->

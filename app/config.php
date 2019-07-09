@@ -23,6 +23,11 @@ $rotas->adicionarRota(Requisicao::GET, "/auth/sair", "Login", "sair");
 
 //Rota Linha do Tempo
 $rotas->adicionarRota(Requisicao::GET, "/linhadotempo", "LinhaDoTempo", "mostrarPontos");
+$rotas->adicionarRota(Requisicao::POST, "/excluir", "LinhaDoTempo", "excluir");
+$rotas->adicionarRota(Requisicao::GET, "/criarponto", "LinhaDoTempo", "telaCriacaoPonto");
+$rotas->adicionarRota(Requisicao::POST, "/criarponto", "LinhaDoTempo", "criarPonto");
+$rotas->adicionarRota(Requisicao::GET, "/api", "LinhaDoTempo", "pontosJson");
+$rotas->adicionarRota(Requisicao::GET, "/visualizar?", "LinhaDoTempo", "visualizar");
 
 $parametros['db.driver'] = 'pgsql';
 $parametros['db.host'] = 'localhost';
