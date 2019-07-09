@@ -35,13 +35,13 @@ class LinhaDoTempo extends Controlador
         }
 
         $pontos = \App\Dominio\Localizacao::select('nome','latitude','longitude','tipo')->get();
-        return new RespostaJson($pontos);
-        // return new RespostaTwig(
-        //     "pontos.html.twig",
-        //     array(
-        //         "titulo" => $this->configuracao->obterParametro('titulo'),
-        //         "pontos" => $pontos
-        //     )
-        // );
+        // return new RespostaJson($pontos);
+        return new RespostaTwig(
+            "pontos.html.twig",
+            array(
+                "titulo" => $this->configuracao->obterParametro('titulo'),
+                "pontos" => $pontos
+            )
+        );
     }
 }

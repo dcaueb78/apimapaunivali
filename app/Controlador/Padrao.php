@@ -29,7 +29,7 @@ class Padrao extends Controlador
         }
 
         if (isset($user)) {
-            
+
         }
 
         return new RespostaTwig(
