@@ -17,9 +17,9 @@ class Padrao extends Controlador
 
         // $user = \App\Dominio\Usuario::Create(
         //     [
-        //         'login' => "zezinho",
+        //         'login' => "caue",
         //         'email' => "teste@teste.com",
-        //         'nome' => "ze da silva",
+        //         'nome' => "caue kotarski",
         //         'senha' => password_hash("123321", PASSWORD_BCRYPT)
         //     ]
         // );

@@ -16,5 +16,8 @@ create table localizacaos (
 
 insert into localizacaos (nome, latitude, longitude, tipo)
 	values ('Dusk', 19223981.5,-122122.2,'Lanchonete');
+
+insert into usuarios (nome, latitude, longitude, tipo)
+	values ('Dusk', 19223981.5,-122122.2,'Lanchonete');
 	
 select * from localizacaos

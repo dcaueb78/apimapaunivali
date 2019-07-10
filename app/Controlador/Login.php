@@ -50,7 +50,7 @@ class Login extends Controlador
             $_SESSION['usuario']['nome'] = $usuario->nome;
             $_SESSION['usuario']['login'] = $usuario->login;
 
-            return new RespostaJson("Seja bem-vindo ".$_SESSION['usuario']['nome']);
+            return new Redirecionamento('/linhadotempo');
 
         } else {
             return new RespostaJson('login incorreto');
